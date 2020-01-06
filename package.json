@@ -1,5 +1,5 @@
 {
-  "name": "giphy",
+  "name": "erwan",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -30,5 +30,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "![](https://media.giphy.com/media/JUYkZ9p2qW9g5Z0e6P/giphy.gif)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dciberlin/giphy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dciberlin/giphy/issues"
+  },
+  "homepage": "https://github.com/dciberlin/giphy#readme"
 }
