@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  width:100%;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
 }
 
 .App-logo {
@@ -35,4 +39,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.rightContainer {
+  background-color: darkblue;
+  color:white;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.leftContainer {
+  background-color: darkgrey;
+  height:100vh;
+  overflow:scroll;
+  display: flex;
+  width:50%;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+
+.imageBox {
+  width: 33.3%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.imageBox img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
 }
