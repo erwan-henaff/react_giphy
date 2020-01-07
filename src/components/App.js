@@ -6,8 +6,8 @@ import Preview from './Preview';
 
 class App extends React.Component {
 
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       preview_url : "https://media0.giphy.com/media/JVdF14CQQH7gs/giphy.gif?cid=31fb48e9edc198912f9c3ed7b12a11af8c5af80482718182&rid=giphy.gif"
     };
