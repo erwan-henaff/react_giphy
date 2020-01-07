@@ -8,31 +8,24 @@ import Preview from './Preview';
 console.log(data.length);
 
 
-// import ListContainer from './ListContainer';
-
 class App extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      index : "https://media0.giphy.com/media/JVdF14CQQH7gs/giphy.gif?cid=31fb48e9edc198912f9c3ed7b12a11af8c5af80482718182&rid=giphy.gif"
+      preview_url : "https://media0.giphy.com/media/JVdF14CQQH7gs/giphy.gif?cid=31fb48e9edc198912f9c3ed7b12a11af8c5af80482718182&rid=giphy.gif"
     };
   }
 
-  handleUpdate = index1 => {
-    console.log("handelupdate entering")
-    console.log(index1);
-    this.setState({index:index1})
-    
-    console.log(index1);
-    console.log("handelupdate exiting");
+  handleUpdate = pass_url => {
+    this.setState({preview_url: pass_url})
   };
 
 
   render() {
-    const imgbox = data.map((el,data,index)=> {
+    const imgbox = data.map((el)=> {
       return (
-        <ImageBox key={el.id} url_img={el.images.downsized_large.url} id={el.images.downsized_large.url} updateIndex={this.handleUpdate}></ImageBox>
+        <ImageBox key={el.id} url_img={el.images.downsized_large.url} updateIndex={this.handleUpdate}></ImageBox>
       )
     })
     return (
@@ -41,7 +34,7 @@ class App extends React.Component {
             {imgbox}
           </div>
           <div className="rightContainer">
-            <Preview previewIndex={this.state.index}></Preview>
+            <Preview previewIndex={this.state.preview_url}></Preview>
           </div>
       </div>
     );

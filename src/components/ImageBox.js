@@ -4,11 +4,9 @@ const ImageBox = props => {
 
     function passID (e) {
         e.preventDefault();
-        let id = props.id;
-        props.updateIndex(id);
-        console.log("----pass ID--")
-        console.log(id);
-        console.log("watashi")
+        let new_url = props.url_img;
+        props.updateIndex(new_url);
+        
     }
 
   return (
@@ -16,9 +14,12 @@ const ImageBox = props => {
         
         <img src={props.url_img} alt="kuso2" onClick ={passID} />
 
+        {/* <img src={props.url_img} alt="kuso2" onClick ={passID}></img> */}
+
+
       
     
-     </div>
+    </div>
   );
 };
 
