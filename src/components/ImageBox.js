@@ -6,23 +6,13 @@ const ImageBox = props => {
         e.preventDefault();
         let new_url = props.url_img;
         props.updateIndex(new_url);
-        
     }
 
   return (
     <div className="imageBox">
-        
-        <img src={props.url_img} alt="kuso2" onClick ={passID} />
-
-        {/* <img src={props.url_img} alt="kuso2" onClick ={passID}></img> */}
-
-
-      
-    
+        <img src={props.url_img} alt="kuso2" onClick ={passID} />    
     </div>
   );
 };
-
-//const ImageBox = "bala";
 
 export default ImageBox;

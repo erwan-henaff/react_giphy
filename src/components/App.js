@@ -4,10 +4,6 @@ import data from '../data/giphy.js';
 import ImageBox from './ImageBox';
 import Preview from './Preview';
 
-
-console.log(data.length);
-
-
 class App extends React.Component {
 
   constructor(props) {
